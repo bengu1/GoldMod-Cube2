@@ -1,0 +1,113 @@
+####################################################################################################################################################################################################
+GoldMod Collect Command Reference 
+####################################################################################################################################################################################################
+written by Sebastian ( /BudSpencer ) :3
+####################################################################################################################################################################################################
+
+
+
+
+Commands ( requires no privileges ): amsg beer cheater dl flagrun help info mmhelp mmsg motd nmsg np players pm privileges pstats rules say stats
+Commands ( requires Master privileges ): blist callops cb delban emute eunmute getip givemaster hmc kick kill listmaps locked map mlist mute open pause resume rqsm savemap smite spec specmsg time tm unmute veto warn whois
+Commands ( requires Admin privileges ): ado auth cgbans delpban disc discall eval evalhelp fpban geoip giveadmin gtime loadmap mclients mspec pban pbanlist persist pig private rqsa seen smiteall specall stop syncauth unmspec
+
+---------------------------------------------------------------------------
+| ----> /showclientnum 1 to show player cn's			                        |
+| ----> /showping 1 to show player's ping 				                        |
+| ----> /showpj to show player's pj					                              |
+| ---->	/toggleconsole or F11 to show toggle console	                    |
+---------------------------------------------------------------------------
+
+INFO: The arguments in (<>) | like: (<message>) are not required ( they are additional )
+INFO: The arguments in <> | like: <cn> are required to run command, otherwise you'll get command error
+
+
+Reference::Commands 
+
+
+
+  Name	  |        Handle it 	      |									Usage of Command ( Description )
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+amsg	  |#amsg <message>            | A command to send a message too all admins ( only visible for admins ) 
+beer	  |#beer (<cn>)	              | A command to give someone on server a beer or signal to want some beer ;) 
+cheater |#cheater <cn> (<message>)  | A command to suspect somebody as cheater ( you can add a additional entry after it ) ---> send the message to irc and server-log
+dl	    |#dl			                  | A command to display the download URL for buddymod release ( latest ) 
+flagrun	|#flagrun (<mode>) (<map>)  | A command to show flagrun record for current map/mode ( if no mode/map specified in typing command ) or for specified map/mode 
+help	  |#help (<command-name>)     | A command to show commands list with current privilege level and command help ( command must be specified after #help )
+info	  |#info	                    | A command to show info string with server uptime, developer, system-name, and architecture of host-OS ( win/32, linux/32, linux/64 and osX/64 )
+mmhelp	|#mmhelp	                  | A command to show info string with mastermode help
+mmsg	  |#mmsg <message>            | A command to send a message to all masters ( only visible for masters )
+motd	  |#motd		                  | A command to show current server motd ( Message of the Day ) 
+nmsg    |#nmsg <message>            | A command to send a message to all normal players ( only visible for all unprivileged players )
+np	    |#np <cn>		                | A command to forgive teamkill of any player 
+players |#players	                  | A command to show current game stats of all players
+pm	    |#pm <cn> <message>	        | A command to send a PM ( Personal/Private Message ) to specified player(cn)
+priv    |#priv	                    | A command to return all player's privilege level in info string ( "admin" , "master" and "no advanced" )
+pstats	|#pstats <cn>	              | A command to show specified player stats
+rules	  |#rules		                  | A command to show info string with server rules
+say	    |#say <message>             | A command to send a public message to server, irc and server-log
+stats	  |#stats		                  | A command to show player stats of current player
+uptime  |#uptime                    | A command to show current server uptime
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+blist	  |#blist		                  | A command to show all temporal ban on server
+callops	|#callops		                | A command to send a SOS message to irc admins ( i don't promise, that he'll see it )
+cb	    |#cb			                  | A command to clear all temporal bans on current server
+delban	|#delban <num>              | A command to delete a specified temporal ban on server
+emute   |#emute <cn>		            | A command to editmute a specified player on server ( editmute: player can't edit in coop edit mode. At least, his changes on ma<p are ignored while compiling map )
+eunmute |#eunmute <cn>              | A command to remove editmute status from editmuted player on server
+getip	  |#getip <cn>		            | A command to get IP of selected player
+givem   |#givemaster <cn>	          | A command to give selected player master privileges
+hmc	    |#hmc			                  | A command to see how much clients are currently connected
+kick    |#kick <cn> (<time>)	      | A command to kick a player from server ( time can be specified ) 
+kill	  |#kill <cn>		              | A command to suicide a player on server
+listmaps|#listmaps	                | A command to list all maps stored on server
+locked	|#locked		                | A command to set mastermode to locked(2)
+map	    |#map <map> <mode>	        | A command to set map/mode on that one, you've specified in command run
+mlist	  |#mlist		                  | A command to display, who is muted and who not
+mute    |#mute <cn>		              | A command to mute a specified player
+open	  |#open	                    | A command to set mastermode to open(0)
+pause	  |#pause	                    | A command to pause current game
+resume	|#resume		                | A command to resume current game
+rqsm	  |#rqsm (<1>)	              | A command to relinquish your master privileges 
+savemap |#savemap <name>            | A command to upload current map to server ( #listmaps to show it | #loadmap <name> and then /getmap to load it )
+smite	  |#smite <cn>		            | A command to smite ( suicide ) a specified player
+spec	  |#spec <1|0> <cn>           | A command to spec/unspec selected player on server
+specmsg	|#specmsg <message>         | A command to send a message to all spectators ( only visible for spectators )
+time	  |#time <min> <sec>          | A command to set roundtime to specified rest time
+tm      |#tm <mode> <map>           | A command to start tournament module on specified mode/map
+unmute	|#unmute <cn>		            | A command to unmute already muted player
+veto	  |#veto		                  | A command to set mastermode to veto(1)
+warn 	  |#warn <cn> <message>	      | A command to warn a specified player with a message
+whois	  |#whois <cn>	              | A command to see player names of specified player on server
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ado	    |#ado <1|0>	                | A command to enable/disable autodemo function ( autodemo = record a demo after every match )
+auth	  |#auth 		                  | A command to set mastermode to auth(-1)
+cgbans	|#cgbans		                | A command to clear all global bans on master.sauerbraten.org
+delpban	|#delpban <num>             | A command to delete specified permanent ban on server
+disc	  |#disc <cn>	                | A command to disconnect specified player on server
+discall	|#discall		                | A command to disconnect all players and bots from server ( you too )
+eval	  |#eval <str>		            | A command to execute a cubescript directly on server
+evalhelp|#evalhelp		              | A command to get info string with all commands available for #eval command
+fpban	  |#fpban <IP|mask>           | A command to browse permanent bans list for specified IP/Mask ( Ip ranges supported too )
+geoip	  |#geoip		                  | A command to get list of players with IP, cn and locaction 
+givea   |#giveadmin		              | A command to give specified player on server your admin privileges
+gtime	  |#gtime <min>		            | A command to set round time limit for every next round
+loadmap |#loadmap <name>            | A command to load a specified stored map on server ( after running #loadmap <name> you should type /getmap to show map )
+mclients|#mclients		              | A command to set maximum number of clients to another one ( is reseting on mapstart )
+mspec	  |#mspec		                  | A command to mute all spectators on server
+pban	  |#pban <IP|cn> <reason>     | A command to permanent ban a specified player on server ( reason must be added after player's cn/IP )
+pbanlist|#pbanlist	                | A command to show sorted list of all permanent bans on server
+persist	|#persist <1|0>	            | A command to enable/disable persist function ( persist = on clanwars, player can't switch teams )
+pig	    |#pig <team> <1|0>	        | A command to enable/disable pigmode module ( pigmode = player on specified team can pick a map ( useful in clanwars ) )
+private	|#private		                | A command to set mastermode to private(3)
+rqsa	  |#rqsa		                  | A command to relinquish you admin privileges on server
+seen	  |#seen <name>	              | A command to browse in SQLite database for player's last connection time ( name of player must be specified )
+smiteall|#smiteall		              | A command to smite ( suicide ) all players on server ( you too )
+specall	|#specall <1|0>             | A command to spectate/unspectate all players on server ( you too )
+stop	  |#stop (<1>)		            | A command to stop server without restarting ( only use, if your the server operator )
+syncauth|#syncauth	                | A command to reload all authkeys from file ( permanent_bans.cfg ) or database ( buddymod_sqlite.db ) without restarting server
+unmspec	|#unmspec 		              |	A command to unmute all ( already muted ) specators on server ( if you spectator, you too )
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
