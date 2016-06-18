@@ -1,0 +1,10 @@
+// Example Command - prints a message to server
+// made by /BudSpencer ( 2016 )
+
+cmd_example = [
+
+  say ( format "^f7Player ^f3%1 ^f7said: ^f4%2" ( getname $arg1 ) $arg2 ) 
+  
+]
+
+registercommand "example" cmd_example 1 "s" "example <message> ^f4This commands sends a public message to server."
