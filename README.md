@@ -9,7 +9,7 @@ GoldMod is an advanced Server Fork for Windows, Linux and Mac OS X, it includes 
 
 -------------------------------------------------------------------------------------------------------------
 
-Command Reference:
+**Command Reference:**
 
     #tm - That command starts tournament module ( written by me, from BuddyMod )
     #giveadmin - That command gives somebody on server admin privileges
@@ -22,7 +22,7 @@ Command Reference:
 
 -------------------------------------------------------------------------------------------------------------
 
-Work in Process:
+**Work in Process:**
 
     better anticheat
     user system
@@ -34,7 +34,7 @@ Work in Process:
 
 -------------------------------------------------------------------------------------------------------------
 
-Installation:
+**Installation:**
 
 For Windows: *** Installation for Windows is quite easy ***
 
@@ -53,7 +53,7 @@ For Windows: *** Installation for Windows is quite easy ***
 
 -------------------------------------------------------------------------------------------------------------
 
-Contact:
+**Contact:**
 
     E-Mail: buddymod.cube2@gmail.com
     IRC: Server: irc.gamesurge.com 6667 | Channel: #buds-servers, #novi, #sauercom and #impressivesquad ---> Names: BudSpencer
@@ -61,12 +61,12 @@ Contact:
 
 -------------------------------------------------------------------------------------------------------------
 
-Bug Reports:
+**Bug Reports:**
 
 If you suspect any bugs and problems, likes and dislikes message me on IRC, E-Mail or talk with me ingame, i'm always listening. New Ideas for some features are desired ;), but no insulting about anything, i dont waste time with random noobs
 
 -------------------------------------------------------------------------------------------------------------
 
-Last Word:
+**Last Word:**
 
 HAVE FUN WITH THE MOD!!!! :D
