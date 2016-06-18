@@ -1,0 +1,59 @@
+******************************************************************************************
+Started server 06/18/16 21:26:47
+******************************************************************************************
+GoldMod Collect: programmed by /BudSpencer, |RB|degrave, vaQ'Star, =DK=Fohlen and va|nopnotmetro
+******************************************************************************************
+(C) GoldMod 4.4.3 Collect 05/23/2016
+******************************************************************************************
+[2016-06-18 21:26:47] [INFO] Registered database 'default' sqlite3://GoldMod_sqlite3.db
+[2016-06-18 21:26:47] [INFO] Connected to database 'default' sqlite3://GoldMod_sqlite3.db
+Geoip: geoip loaded (db: "GeoIPCountry.dat")
+>>> Loading flagrun results from database 'default' <<<
+[2016-06-18 21:26:47] [INFO] >>> Flagrun: loaded flagrun_best_17_forge va|Iиfïиïтy (6667 ms) <<<
+>>> Loading authkeys from database 'default' <<<
+>>> Loaded 0 authkeys from database <<<
+[2016-06-18 21:26:47] [WARN] Module 'spy' could be very slow on SQLite database, it's better to use MySQL instead
+[2016-06-18 21:26:47] [INFO] executed 85 files in 'scripts/commands'
+[2016-06-18 21:26:47] [INFO] executed 39 files in 'scripts/irccommands'
+[2016-06-18 21:26:47] [INFO] executed 0 files in 'scripts/languages'
+[2016-06-18 21:26:47] >>> Update: Number of currently connected clients: 0/24. <<<
+scripts/modules/MixModule.cfg:1: unexpected "]"
+looking up master.sauerbraten.org...
+dedicated server started, waiting for clients...
+client connected (94.222.57.181)
+[2016-06-18 21:26:55] >>> Map changed: Mode: ffa | Map: complex | Number of Clients: 1/24 clients are currently connected. <<<
+0
+[2016-06-18 21:26:55] >>> A new tournament can be started now. <<<
+[2016-06-18 21:26:55] >>> Connect: /BudSpencer(0) connected from 94.222.57.181. <<<
+[2016-06-18 21:27:05] >>> Chat by /BudSpencer(0): g <<<
+status: 1 remote clients, 0.1 send, 0.9 rec (K/sec)
+disconnected client (94.222.57.181)
+[2016-06-18 21:28:07] >>> Disconnect: Name(cn): /BudSpencer(0) - Left after: 00h 01m 12s minutes. <<<
+client connected (94.222.57.181)
+[2016-06-18 21:28:07] >>> Connect: /BudSpencer(0) connected from 94.222.57.181. <<<
+status: 1 remote clients, 0.1 send, 1.0 rec (K/sec)
+status: 1 remote clients, 0.1 send, 1.0 rec (K/sec)
+client connected (74.44.17.39)
+[2016-06-18 21:29:55] >>> Connect: Tina(1) connected from 74.44.17.39. <<<
+disconnected client (94.222.57.181)
+[2016-06-18 21:30:10] >>> Disconnect: Name(cn): /BudSpencer(0) - Left after: 00h 02m 02s minutes. <<<
+client connected (192.168.2.192)
+[2016-06-18 21:30:13] >>> Connect: /BudSpencer(0) connected from 192.168.2.192. <<<
+status: 2 remote clients, 1.2 send, 1.5 rec (K/sec)
+disconnected client (192.168.2.192)
+[2016-06-18 21:31:41] >>> Disconnect: Name(cn): /BudSpencer(0) - Left after: 00h 01m 28s minutes. <<<
+status: 1 remote clients, 1.5 send, 1.7 rec (K/sec)
+status: 1 remote clients, 0.1 send, 0.8 rec (K/sec)
+status: 1 remote clients, 0.1 send, 0.9 rec (K/sec)
+status: 1 remote clients, 0.1 send, 0.8 rec (K/sec)
+status: 1 remote clients, 0.1 send, 0.8 rec (K/sec)
+disconnected client (74.44.17.39)
+[2016-06-18 21:35:50] >>> Disconnect: Name(cn): Tina(1) - Left after: 00h 05m 55s minutes. <<<
+status: 0 remote clients, 0.0 send, 0.1 rec (K/sec)
+client connected (94.222.57.181)
+[2016-06-18 22:53:16] >>> Connect: /BudSpencer(0) connected from 94.222.57.181. <<<
+[2016-06-18 22:53:16] >>> Update: Number of currently connected clients: 1/24. <<<
+status: 1 remote clients, 0.1 send, 0.5 rec (K/sec)
+disconnected client (94.222.57.181)
+[2016-06-18 22:54:01] >>> Disconnect: Name(cn): /BudSpencer(0) - Left after: 00h 00m 45s minutes. <<<
+status: 0 remote clients, 0.0 send, 0.2 rec (K/sec)
