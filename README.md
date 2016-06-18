@@ -3,7 +3,7 @@ Sauerbraten Server Modification ( based on remod )
 
 -------------------------------------------------------------------------------------------------------------
 
-General Information:
+**General Information:**
 
 GoldMod is an advanced Server Fork for Windows, Linux and Mac OS X, it includes many features to manage and host a good server. It's primary based on remod, but it's little modified in C++ and very much modified in CubeScript. Core is almost same as remod. Latest Release ( v4.7.5 ) got about 80 Commands and 36 IRC-Commands for IRC-Bot, a Cheater Detection, a script, that mutes Insulters and kicks players using offensive name. Much features are pushed from BuddyMod/remod -> repository is removed, but i will send optional packages, if somebody ask me per E-Mail. EDIT: Some modules are pushed from remod-userscripts, but no commands.
 
