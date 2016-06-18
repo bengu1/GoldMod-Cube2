@@ -1,0 +1,12 @@
+// Example IRC Command - changes mastermode on server
+// made by /BudSpencer ( 2016 )
+
+irccmd_example = [
+
+mastermode $arg2
+
+say ( format "^f7Mastermode has been ^f3changed ^f7to ^f4%1^f7." ( getmastermodename $arg2 ) )
+
+]
+
+irc_registercommand "example" irccmd_example 1 "i" "example <mastermode> ^f4This command changes mastermode on server. ( -1 - auth | 0 - open | 1 - veto | 2 - locked | 3 - private )"
