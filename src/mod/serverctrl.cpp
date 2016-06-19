@@ -601,10 +601,11 @@ void uptimef(const char *fmt)
 {
     // max correct uptime 134 years
     // %s - seconds, %m - minutes, %h - hours, %d - days, %y
-    uint seconds, minutes, hours, days, years;
+    uint seconds, minutes, hours, days, months, years;
     vector<char> s;
 
     years = totalsecs/(60*60*24*365); // dont count leap year
+    months = totalsecs/(60*60*24*31);
     days = (totalsecs/(60*60*24))%365;
     hours = (totalsecs/(60*60))%24;
     minutes = (totalsecs/(60))%60;
@@ -650,6 +651,14 @@ void uptimef(const char *fmt)
                     const char *sdays;
                     sdays = intstr(days);
                     while(*sdays) s.add(*sdays++);
+                    break;
+                }
+
+                case 'mo':
+                {
+                    const char *smonths;
+                    smonths = intstr(months);
+                    while(*smonths) s.add(*smonths++);
                     break;
                 }
 

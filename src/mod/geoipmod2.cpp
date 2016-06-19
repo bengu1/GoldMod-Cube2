@@ -124,7 +124,7 @@ namespace geoip
             });
 
     /**
-    * Check if geoip is ready to use
+    * Check if geoip country is ready to use
     * @group server
     * @return 1 if is ready, otherwise 0
     */
