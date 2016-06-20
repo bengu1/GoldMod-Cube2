@@ -408,7 +408,7 @@ namespace server
     {
         switch(type)
         {
-            case PRIV_ROOT: return "root";
+            //case PRIV_ROOT: return "root";
             case PRIV_ADMIN: return "admin";
             case PRIV_AUTH: return "auth";
             case PRIV_MASTER: return "master";
@@ -1060,7 +1060,7 @@ namespace server
         u.pubkey = parsepubkey(pubkey);
         switch(priv[0])
         {
-            case 'r': case 'r': u.privilege = PRIV_ROOT; break;
+           // case 'r': case 'r': u.privilege = PRIV_ROOT; break;
             case 'a': case 'A': u.privilege = PRIV_ADMIN; break;
             case 'm': case 'M': default: u.privilege = PRIV_AUTH; break;
             case 'n': case 'N': u.privilege = PRIV_NONE; break;

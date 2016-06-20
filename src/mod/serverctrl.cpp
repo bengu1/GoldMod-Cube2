@@ -217,18 +217,6 @@ void saytoadmin(char *msg)
     }
 }
 
-void saytoroot(char *msg)
-{
-    loopv(clients)
-    {
-        clientinfo *ci = clients[i];
-        if(ci->connected && ci->privilege == PRIV_ROOT)
-        {
-            pm(&ci->clientnum, msg);
-        }
-    }
-}
-
 void _mastermode(int *mm)
 {
     mastermode = (int)*mm;
@@ -1309,14 +1297,6 @@ ICOMMAND(ismaster, "i", (int*cn), intret(ismaster(cn) ? 1 : 0));
  * @return 0 or 1
  */
 ICOMMAND(isadmin, "i", (int *cn), intret(isadmin(cn) ? 1 : 0));
-
-/**
- * Check if specified player is root
- * @group player
- * @arg1 client number
- * @return 0 or 1
- */
-ICOMMAND(isroot, "i", (int *cn), intret(isroot(cn) ? 1 : 0));
 
 /**
  * Check if specified player is spectator
