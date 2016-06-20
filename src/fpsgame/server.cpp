@@ -1153,7 +1153,7 @@ namespace server
         string msg;
         if(val && authname)
         {
-            if(authdesc && authdesc[0]) formatstring(msg, "%s claimed %s as '\fs\f5%s\fr' [\fs\f0%s\fr]", colorname(ci), name, authname, authdesc);
+            if(authdesc && authdesc[0]) formatstring(msg, "\f7Player \f3%s \f7claimed \f4%s \f7as '\fs\f4%s\fr' [\fs\f0%s\fr]", colorname(ci), name, authname, authdesc);
             else formatstring(msg, "%s claimed %s as '\fs\f5%s\fr'", colorname(ci), name, authname);
         }
         else formatstring(msg, "%s %s %s", colorname(ci), val ? "claimed" : "relinquished", name);

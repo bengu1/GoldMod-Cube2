@@ -654,7 +654,7 @@ void uptimef(const char *fmt)
                     break;
                 }
 
-                case 'mo':
+                case 'o':
                 {
                     const char *smonths;
                     smonths = intstr(months);
