@@ -101,7 +101,7 @@ void getflags(int *pcn)
 void version()
 {
     string txt;
-    formatstring(txt, "Remod %s %s (build %s %s) %s/%s", REMOD_CODENAME, REMOD_VERSION, __DATE__, __TIME__, REMOD_SYSTEM, REMOD_ARCH);
+    formatstring(txt, "GoldMod v4.7.5 (build %s %s) %s/%s", __DATE__, __TIME__, REMOD_SYSTEM, REMOD_ARCH);
     result(txt);
 }
 
@@ -211,6 +211,18 @@ void saytoadmin(char *msg)
     {
         clientinfo *ci = clients[i];
         if(ci->connected && ci->privilege == PRIV_ADMIN)
+        {
+            pm(&ci->clientnum, msg);
+        }
+    }
+}
+
+void saytoroot(char *msg)
+{
+    loopv(clients)
+    {
+        clientinfo *ci = clients[i];
+        if(ci->connected && ci->privilege == PRIV_ROOT)
         {
             pm(&ci->clientnum, msg);
         }
@@ -1299,6 +1311,14 @@ ICOMMAND(ismaster, "i", (int*cn), intret(ismaster(cn) ? 1 : 0));
 ICOMMAND(isadmin, "i", (int *cn), intret(isadmin(cn) ? 1 : 0));
 
 /**
+ * Check if specified player is root
+ * @group player
+ * @arg1 client number
+ * @return 0 or 1
+ */
+ICOMMAND(isroot, "i", (int *cn), intret(isroot(cn) ? 1 : 0));
+
+/**
  * Check if specified player is spectator
  * @group player
  * @arg1 client number
@@ -1441,7 +1461,7 @@ VARF(pause, 0, 0, 1, server::pausegame(pause));
  * Clear all player bans created by /kick or #kick (it's not the same as permbans)
  * @group server
  */
-ICOMMAND(clearbans, "", (), remod::onevent(ONCLEARBANS, "i", -1); bannedips.shrink(0); sendservmsg("cleared all bans"));
+ICOMMAND(clearbans, "", (), remod::onevent(ONCLEARBANS, "i", -1); bannedips.shrink(0); sendservmsg("\f7Server has \f3cleared \f7all \f4bans\f7."));
 
 /**
  * Force the player to specified team

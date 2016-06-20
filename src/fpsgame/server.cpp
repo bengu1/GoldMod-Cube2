@@ -294,6 +294,7 @@ namespace server
     // remod
     SVAR(commandchar, "#"); //Command character
     SVAR(masterpass, "");   //Password for calim master instead of admin
+    SVAR(rootpass, ""); // password for gain root
 
     struct teamkillkick
     {
@@ -407,6 +408,7 @@ namespace server
     {
         switch(type)
         {
+            case PRIV_ROOT: return "root";
             case PRIV_ADMIN: return "admin";
             case PRIV_AUTH: return "auth";
             case PRIV_MASTER: return "master";
@@ -1058,6 +1060,7 @@ namespace server
         u.pubkey = parsepubkey(pubkey);
         switch(priv[0])
         {
+            case 'r': case 'r': u.privilege = PRIV_ROOT; break;
             case 'a': case 'A': u.privilege = PRIV_ADMIN; break;
             case 'm': case 'M': default: u.privilege = PRIV_AUTH; break;
             case 'n': case 'N': u.privilege = PRIV_NONE; break;
@@ -1153,10 +1156,10 @@ namespace server
         string msg;
         if(val && authname)
         {
-            if(authdesc && authdesc[0]) formatstring(msg, "\f7Player \f3%s \f7claimed \f4%s \f7as '\fs\f4%s\fr' [\fs\f0%s\fr]", colorname(ci), name, authname, authdesc);
+            if(authdesc && authdesc[0]) formatstring(msg, "\f7Player \f3%s \f7claimed \f4%s \f7as '\fs\f4%s\fr' [\fs\f7%s\fr]", colorname(ci), name, authname, authdesc);
             else formatstring(msg, "%s claimed %s as '\fs\f5%s\fr'", colorname(ci), name, authname);
         }
-        else formatstring(msg, "%s %s %s", colorname(ci), val ? "claimed" : "relinquished", name);
+        else formatstring(msg, "\f7Player \f3%s \f7has %s \f4%s\f7.", colorname(ci), val ? "claimed" : "relinquished", name);
         packetbuf p(MAXTRANS, ENET_PACKET_FLAG_RELIABLE);
         putint(p, N_SERVMSG);
         sendstring(msg, p);
