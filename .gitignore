@@ -1,4 +1,5 @@
 *.gmsl
 *.dmo
 *.o
+*.db
 scripts/commands/ForgivePlayer.cfg
