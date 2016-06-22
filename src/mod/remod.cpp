@@ -607,7 +607,7 @@ void setmaster(clientinfo *ci, int priv)
     loopv(clients) if(clients[i]->local || clients[i]->privilege >= PRIV_MASTER) hasmaster = true;
     if(!hasmaster)
     {
-        mastermode = MM_OPEN;
+        mastermode = MM_VETO;
         allowedips.shrink(0);
         modechanged = true;
     }

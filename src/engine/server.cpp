@@ -346,8 +346,8 @@ void disconnect_client(int n, int reason)
     server::clientdisconnect(n);
     const char *msg = disconnectreason(reason);
     string s;
-    if(msg) formatstring(s, "client (%s) disconnected because: %s", ((server::clientinfo *)(clients[n]->info))->name, msg);
-    else formatstring(s, "client (%s) disconnected", ((server::clientinfo *)(clients[n]->info))->name);
+    if(msg) formatstring(s, "\f7Client \f3(%s) \f7is disconnected from server because: \f4%s\f7.", ((server::clientinfo *)(clients[n]->info))->name, msg);
+    else formatstring(s, "\f7Client \f3(%s) \f7is disconnected from \f4server\f7.", ((server::clientinfo *)(clients[n]->info))->name);
     logoutf("%s", s);
 
     delclient(clients[n]);
