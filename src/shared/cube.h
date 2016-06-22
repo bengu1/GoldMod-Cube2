@@ -47,7 +47,7 @@
 #include <SDL_opengl.h>
 #endif
 
-#include <enet\enet.h>
+#include <enet/enet.h>
 
 #include <zlib.h>
 

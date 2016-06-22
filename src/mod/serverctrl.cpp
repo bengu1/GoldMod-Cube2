@@ -101,7 +101,7 @@ void getflags(int *pcn)
 void version()
 {
     string txt;
-    formatstring(txt, "GoldMod v4.7.5 (build %s %s) %s/%s", __DATE__, __TIME__, REMOD_SYSTEM, REMOD_ARCH);
+    formatstring(txt, "GoldMod (build %s %s) %s/%s", __DATE__, __TIME__, REMOD_SYSTEM, REMOD_ARCH);
     result(txt);
 }
 
@@ -1441,7 +1441,7 @@ VARF(pause, 0, 0, 1, server::pausegame(pause));
  * Clear all player bans created by /kick or #kick (it's not the same as permbans)
  * @group server
  */
-ICOMMAND(clearbans, "", (), remod::onevent(ONCLEARBANS, "i", -1); bannedips.shrink(0); sendservmsg("\f7Server has \f3cleared \f7all \f4bans\f7."));
+ICOMMAND(clearbans, "", (), remod::onevent(ONCLEARBANS, "i", -1); bannedips.shrink(0); sendservmsg("cleared all bans"));
 
 /**
  * Force the player to specified team

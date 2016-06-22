@@ -28,11 +28,11 @@
  *  http://www.itl.nist.gov/fipspubs/fip180-1.htm
  */
 
-#include "cryptomod/polarssl/include/polarssl/config.h"
+#include "polarssl/config.h"
 
 #if defined(POLARSSL_SHA1_C)
 
-#include "cryptomod/polarssl/include/polarssl/sha1.h"
+#include "polarssl/sha1.h"
 
 #if defined(POLARSSL_FS_IO) || defined(POLARSSL_SELF_TEST)
 #include <stdio.h>
@@ -444,7 +444,7 @@ void sha1_hmac( const unsigned char *key, size_t keylen,
 /*
  * FIPS-180-1 test vectors
  */
-static unsigned char sha1_test_buf[3][57] =
+static unsigned char sha1_test_buf[3][57] = 
 {
     { "abc" },
     { "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq" },

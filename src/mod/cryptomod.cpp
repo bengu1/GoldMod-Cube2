@@ -7,10 +7,10 @@
 */
 
 #include "cube.h"
-#include "cryptomod/polarssl/include/polarssl/md5.h"
-#include "cryptomod/polarssl/include/polarssl/sha1.h"
-#include "cryptomod/polarssl/include/polarssl/sha2.h"
-#include "cryptomod/polarssl/include/polarssl/sha4.h"
+#include "polarssl/md5.h"
+#include "polarssl/sha1.h"
+#include "polarssl/sha2.h"
+#include "polarssl/sha4.h"
 #include "remod.h"
 
 EXTENSION(CRYPTO);

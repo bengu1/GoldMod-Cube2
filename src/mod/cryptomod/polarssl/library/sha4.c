@@ -28,11 +28,11 @@
  *  http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf
  */
 
-#include "cryptomod/polarssl/include/polarssl/config.h"
+#include "polarssl/config.h"
 
 #if defined(POLARSSL_SHA4_C)
 
-#include "cryptomod/polarssl/include/polarssl/sha4.h"
+#include "polarssl/sha4.h"
 
 #if defined(POLARSSL_FS_IO) || defined(POLARSSL_SELF_TEST)
 #include <stdio.h>
@@ -451,7 +451,7 @@ void sha4_hmac( const unsigned char *key, size_t keylen,
 /*
  * FIPS-180-2 test vectors
  */
-static unsigned char sha4_test_buf[3][113] =
+static unsigned char sha4_test_buf[3][113] = 
 {
     { "abc" },
     { "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmn"
