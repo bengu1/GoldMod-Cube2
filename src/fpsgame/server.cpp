@@ -1986,8 +1986,8 @@ namespace server
             // ts.respawn();
 
             // remod
-            if(onfrag)      remod::onevent(ONFRAG,     "i", actor->clientnum);
-            if(onteamkill)  remod::onevent(ONTEAMKILL, "i", actor->clientnum);
+            if(onfrag)      remod::onevent(ONFRAG,     "ii", actor->clientnum, target->clientnum);
+            if(onteamkill)  remod::onevent(ONTEAMKILL, "ii", actor->clientnum, target->clientnum);
             if(ondeath)     remod::onevent(ONDEATH,    "i", target->clientnum);
             if(onsuicide)
             {
