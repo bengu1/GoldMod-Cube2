@@ -25,10 +25,11 @@ GoldMod is an advanced Server Fork for Windows, Linux and Mac OS X, it includes 
 **Work in Process:**
 
     better anticheat
-    user system
+    user system -------------------> DONE!!!
     multilanguage system
     enable-disable-commands-system
     MixModule
+    ZombieMode
     more commands
     GeoIP Continent ( written in CubeScript )
 
