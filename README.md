@@ -1,37 +1,41 @@
 # GoldMod-Cube2
-Sauerbraten Server Modification ( based on remod )
+Sauerbraten Server Modification
+
 
 -------------------------------------------------------------------------------------------------------------
 
 **General Information:**
 
-GoldMod is an advanced Server Fork for Windows, Linux and Mac OS X, it includes many features to manage and host a good server. It's primary based on remod, but it's little modified in C++ and very much modified in CubeScript. Core is almost same as remod. Latest Release ( v4.7.5 ) got about 80 Commands and 36 IRC-Commands for IRC-Bot, a Cheater Detection, a script, that mutes Insulters and kicks players using offensive name. Much features are pushed from BuddyMod -> repository is removed, but i will send optional packages, if somebody ask me per E-Mail. EDIT: Some modules are pushed from remod-userscripts, but no commands.
+GoldMod is a server modification based on degrave's remod. It contains more commands, more functions, better interface, better english, much more geoip functions and better IRC. It's got better administration
+system and more settings variables to setup server as you wish. Latest version (5.0.0 - will release at 20.08.2016) got better interface, about 70+ commands and more messages for server. To edit source code 
+just run stc/GoldMod.cbp . To compile it for windows you need to cross-compile with src/Makefile.win32 . For editing scripts ( cubescript ) used by server just connect to scripts/ directory and edit the contained .cfg files.
+Good luck and have fun ;)
 
 -------------------------------------------------------------------------------------------------------------
 
 **Command Reference:**
 
     #tm - That command starts tournament module ( written by me, from BuddyMod )
-    #giveadmin - That command gives somebody on server admin privileges
+    #setpriv - That command sets privilege of any player on server and can relinquish caller's one
     #priv - That command checks player privilege of all players and returns it in an info string
-    #irc - This command says something directly into IRC-Channel ( only, if IRC-Bot is set )
     #say - That command says a public message to Server ( visible for everybody )
     #cheater - This command sends a cheater message to IRC and log ( admins check this then )
     #mspec - This command mutes all spectators on server ( #unmspec to unmute them )
     #ping - This command checks ping of all players and returns it in an info string
+    #eval - This command allows you to execute cubescript code directly on server
+    #info - This command shows server information ( system, version, uptime, developer, ... )
+    
+    ... and much more ... :D
 
 -------------------------------------------------------------------------------------------------------------
 
 **Work in Process:**
 
-    better anticheat
-    user system -------------------> DONE!!!
-    multilanguage system
-    enable-disable-commands-system
-    MixModule
-    ZombieMode
-    more commands
-    GeoIP Continent ( written in CubeScript )
+    better anticheat ( in work )
+    enable-disable-commands-system ( currently not in work )
+    MixModule ( currently not in work )
+    Clantag Detection ( in work )
+    more commands ( currently not in work )
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -39,18 +43,19 @@ GoldMod is an advanced Server Fork for Windows, Linux and Mac OS X, it includes 
 
 For Windows: *** Installation for Windows is quite easy ***
 
-      1. Download Archive and unpack it ( you need 7zip or Winrar to unpack )
-      2. Open "server-init.cfg" and setup all required lines
-      3. Close and save "server-init.cfg"
-      4. Then start "GoldMod.exe" or "GoldMod.bat" 
-      5. Server is running now. Connect to "log/" directory to show server log ( serverlog.gmsl )
-      6. DONE!
+      1.    Download Mod ( it would be an .zip package - you need 7zip or winrar to decompress it or just use windows-owned archive manager )
+      2.    Open "server-init.cfg" and setup all required lines like your wishes
+      3.    Close and save "server-init.cfg" file
+      4.    Then start "GoldMod.exe" or "GoldMod.bat" 
+      4.1   Just look at the taskbar near by the digital clock down right corner, there's an sauerbraten-similar icon, right click to it, click to "Open Console" to show server console or "Exit" for shutdown server
+      4.1.1 If you use GoldMod.bat you need to close opened console and server console too, otherwise it will keep running
+      5.    Server is running now. Connect to "log/" directory to show server log ( serverlog.gmsl )
+      6.    Congratulations! You successfully set up your own server. ;D Have fun
 
       PS: To edit CubeScript Part of mod to to "scripts/" directory
       PPS: To edit source code, open "GoldMod.cbp" ( you need Code::Blocks )
       PPPS: Thanks to degrave for helping me with source ;)
-
-    PPPPS: Collect Version is only modified in CubeScript, because all commands i needed, are already implemented.
+      PPPPS: For linux and mac installation just follow remod instuctions, they are same
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -58,13 +63,13 @@ For Windows: *** Installation for Windows is quite easy ***
 
     E-Mail: buddymod.cube2@gmail.com
     IRC: Server: irc.gamesurge.com 6667 | Channel: #buds-servers, #novi, #sauercom and #impressivesquad ---> Names: BudSpencer
-    Ingame: Names: /BudSpencer, TanteBud, OnkelBud, MuttiBud, PapiBud, OmaBud, OpaBud (c:)
+    Ingame: Names: /BudSpencer, TanteBud, OnkelBud, MuttiBud, PapiBud, OmaBud, OpaBud and Cocoz
 
 -------------------------------------------------------------------------------------------------------------
 
 **Bug Reports:**
 
-If you suspect any bugs and problems, likes and dislikes message me on IRC, E-Mail or talk with me ingame, i'm always listening. New Ideas for some features are desired ;), but no insulting about anything, i dont waste time with random noobs. 
+If you suspect any bugs and problems, likes and dislikes message me on IRC, E-Mail or talk with me ingame, I'm always listening. New Ideas for some features are desired ;), but no insulting about anything, I dont waste time with random noobs. 
 
 -------------------------------------------------------------------------------------------------------------
 
