@@ -3,5 +3,3 @@
 *.o
 *.db
 *.sqlite
-
-scripts/commands/ForgivePlayer.cfg
