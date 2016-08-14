@@ -339,3 +339,289 @@
 	<windows.h>
 	<mmsystem.h>
 
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\engine\command.cpp
+	"engine.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\engine\engine.h
+	"cube.h"
+	"world.h"
+	"glexts.h"
+	"octa.h"
+	"lightmap.h"
+	"bih.h"
+	"texture.h"
+	"model.h"
+	"varray.h"
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\cube.h
+	<math.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdarg.h>
+	<limits.h>
+	<assert.h>
+	<time.h>
+	"windows.h"
+	<eh.h>
+	<dbghelp.h>
+	<SDL.h>
+	<SDL_opengl.h>
+	<enet/enet.h>
+	<zlib.h>
+	"tools.h"
+	"geom.h"
+	"ents.h"
+	"command.h"
+	"iengine.h"
+	"igame.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\enet.h
+	<stdlib.h>
+	"enet/win32.h"
+	"enet/unix.h"
+	"enet/types.h"
+	"enet/protocol.h"
+	"enet/list.h"
+	"enet/callbacks.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\win32.h
+	<stdlib.h>
+	<winsock2.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\unix.h
+	<stdlib.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<unistd.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\types.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\protocol.h
+	"enet/types.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\list.h
+	<stdlib.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\enet\include\enet\callbacks.h
+	<stdlib.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\include\zlib.h
+	"zconf.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\include\zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\tools.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\geom.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\ents.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\command.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\iengine.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\shared\igame.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\engine\world.h
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\engine\server.cpp
+	"engine.h"
+	"rconmod.h"
+	"remod.h"
+	"commandev.h"
+	"irc.h"
+	"shellapi.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\rconmod.h
+	<arpa/inet.h>
+	<netinet/in.h>
+	<string.h>
+	<sys/fcntl.h>
+	<sys/socket.h>
+	<sys/types.h>
+	"windows.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\remod.h
+	"game.h"
+	"varbox.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\game.h
+	"cube.h"
+	"ai.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\ai.h
+
+1466865290 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\varbox.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\commandev.h
+	"fpsgame.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\fpsgame.h
+	"game.h"
+	"remod.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\irc.h
+	"game.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\engine\worldio.cpp
+	"engine.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\entities.cpp
+	"game.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\server.cpp
+	"game.h"
+	"commandev.h"
+	"fpsgame.h"
+	"remod.h"
+	"capture.h"
+	"ctf.h"
+	"collect.h"
+	"capture.h"
+	"ctf.h"
+	"collect.h"
+	"extinfo.h"
+	"aiman.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\capture.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\ctf.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\collect.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\extinfo.h
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\fpsgame\aiman.h
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\banlist.cpp
+	"banlist.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\banlist.h
+	"remod.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\commandev.cpp
+	"commandev.h"
+	"commandhandler.h"
+	"remod.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\commandhandler.h
+	"fpsgame.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\commandhandler.cpp
+	"commandhandler.h"
+	"commandev.h"
+	"remod.h"
+	"irc.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod.cpp
+	"cube.h"
+	"cryptomod/polarssl/include/polarssl/md5.h"
+	"cryptomod/polarssl/include/polarssl/sha1.h"
+	"cryptomod/polarssl/include/polarssl/sha2.h"
+	"cryptomod/polarssl/include/polarssl/sha4.h"
+	"remod.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\include\polarssl\md5.h
+	<string.h>
+	<basetsd.h>
+	<inttypes.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\include\polarssl\sha1.h
+	<string.h>
+	<basetsd.h>
+	<inttypes.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\include\polarssl\sha2.h
+	<string.h>
+	<basetsd.h>
+	<inttypes.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\include\polarssl\sha4.h
+	<string.h>
+	<inttypes.h>
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\library\md5.c
+	"cryptomod/polarssl/include/polarssl/config.h"
+	"cryptomod/polarssl/include/polarssl/md5.h"
+	<stdio.h>
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\include\polarssl\config.h
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\library\sha1.c
+	"cryptomod/polarssl/include/polarssl/config.h"
+	"cryptomod/polarssl/include/polarssl/sha1.h"
+	<stdio.h>
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\library\sha2.c
+	"cryptomod/polarssl/include/polarssl/config.h"
+	"cryptomod/polarssl/include/polarssl/sha2.h"
+	<stdio.h>
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\cryptomod\polarssl\library\sha4.c
+	"cryptomod/polarssl/include/polarssl/config.h"
+	"cryptomod/polarssl/include/polarssl/sha4.h"
+	<stdio.h>
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\db.cpp
+	"db.h"
+	"remod.h"
+	"fpsgame.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\db.h
+	"remod.h"
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\geoipmod.cpp
+	"geoipmod.h"
+	"remod.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\geoipmod.h
+	"fpsgame.h"
+	"GeoIP.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\libgeoip\geoip.h
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\geoipmod2.cpp
+	"GeoIP.h"
+	"GeoIPCity.h"
+	"geoipmod2.h"
+	"remod.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\libgeoip\geoipcity.h
+	"GeoIP.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\geoipmod2.h
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\irc.cpp
+	"irc.h"
+	"remod.h"
+	"commandev.h"
+	"version.inc"
+
+1467884905 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\version.inc
+
+1466865289 source:c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\jsonbanlist.cpp
+	"jsonbanlist.h"
+
+1466865289 c:\users\seanconnery\documents\github\c++\sauerbraten\goldmod-cube2\src\mod\jsonbanlist.h
+	"remod.h"
+	"banlist.h"
+

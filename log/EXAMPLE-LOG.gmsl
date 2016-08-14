@@ -17,6 +17,5 @@ Geoip: geoip loaded (db: "GeoIPCountry.dat")
 [2016-06-19 00:33:08] [INFO] executed 39 files in 'scripts/irccommands'
 [2016-06-19 00:33:08] [INFO] executed 0 files in 'scripts/languages'
 [2016-06-19 00:33:08] >>> Update: Number of currently connected clients: 0/24. <<<
-scripts/modules/MixModule.cfg:1: unexpected "]"
 looking up master.sauerbraten.org...
 dedicated server started, waiting for clients...
