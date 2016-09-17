@@ -2,7 +2,7 @@
 * remod:    serverctrl.cpp
 * date:     2007
 * author:   degrave
-*
+* 
 * additional cubescript functions
 */
 

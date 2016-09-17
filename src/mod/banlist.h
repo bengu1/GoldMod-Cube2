@@ -6,10 +6,11 @@
  */
 
 #include "remod.h"
+#include "time.h"
 
 namespace remod
 {
-    namespace banlist
+	namespace banlist
     {
         struct baninfo
         {
@@ -18,7 +19,7 @@ namespace remod
                 enet_uint32 ip;
                 uchar ipoctet[sizeof(enet_uint32)];
             };
-
+			
             union
             {
                 enet_uint32 mask;
@@ -51,6 +52,7 @@ namespace remod
 
             public:
             banmanager();
+			~banmanager();
             banlist* getbanlist(char *name);
             banlist* localbanlist();
             baninfo* getban(char *listname, size_t n);
@@ -59,6 +61,7 @@ namespace remod
             bool delban(char *listname, int id);
             bool checkban(enet_uint32 ip);
             void parseipstring(char *ipstring, enet_uint32 &destip, enet_uint32 &destmask);
+
         };
 
 
