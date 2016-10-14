@@ -2,7 +2,7 @@
 * remod:    serverctrl.cpp
 * date:     2007
 * author:   degrave
-* 
+*
 * additional cubescript functions
 */
 
@@ -605,7 +605,7 @@ void uptimef(const char *fmt)
     vector<char> s;
 
     years = totalsecs/(60*60*24*365); // dont count leap year
-	months = totalsecs/(60*60*24*31); 
+	months = totalsecs/(60*60*24*31);
     days = (totalsecs/(60*60*24))%365;
     hours = (totalsecs/(60*60))%24;
     minutes = (totalsecs/(60))%60;

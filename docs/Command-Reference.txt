@@ -26,7 +26,7 @@ Reference::Commands
 
 
 
-  Name	  |        Handle it 	      |									Usage of Command ( Description )
+  Name	|        Handle it 	        |									Usage of Command ( Description )
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________
 amsg	  |#amsg <message>            | A command to send a message too all admins ( only visible for admins ) 
 beer	  |#beer (<cn>)	              | A command to give someone on server a beer or signal to want some beer ;) 
