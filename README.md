@@ -6,24 +6,36 @@ Sauerbraten Server Modification
 
 **General Information:**
 
-GoldMod is a server modification based on degrave's remod. It contains more commands, more functions, better interface, better english, much more geoip functions and better IRC. It's got better administration
-system and more settings variables to setup server as you wish. Latest version (5.0.0 - will release at 20.08.2016) got better interface, about 70+ commands and more messages for server. To edit source code 
-just run stc/GoldMod.cbp . To compile it for windows you need to cross-compile with src/Makefile.win32 . For editing scripts ( cubescript ) used by server just connect to scripts/ directory and edit the contained .cfg files.
-Good luck and have fun ;)
+Goldmod is an advanced server modification based on remod.
+
+-------------------------------------------------------------------------------------------------------------
+
+** Features:**
+
+- irc-bot
+- cubescript
+- about 80 commands
+- anticheat (experimental)
+- many useful scripts for server 
+- scoreboard (sqlite3 + mysql)
+- remote control
+
+and very much more ...
 
 -------------------------------------------------------------------------------------------------------------
 
 **Command Reference:**
 
-    #tm - That command starts tournament module ( written by me, from BuddyMod )
-    #setpriv - That command sets privilege of any player on server and can relinquish caller's one
-    #priv - That command checks player privilege of all players and returns it in an info string
-    #say - That command says a public message to Server ( visible for everybody )
-    #cheater - This command sends a cheater message to IRC and log ( admins check this then )
-    #mspec - This command mutes all spectators on server ( #unmspec to unmute them )
-    #ping - This command checks ping of all players and returns it in an info string
-    #eval - This command allows you to execute cubescript code directly on server
-    #info - This command shows server information ( system, version, uptime, developer, ... )
+Some useful Commands: 
+
+    #help - show server command list
+    #setpriv - set privilege of specified player
+    #stats <cn> (<total>) - show stats of specified player. You can also look at the total stats from the local database.
+    #mastermode - change mastermode
+    #votekick - vote to kick player (50+% required)
+    #mapsucks - vote for intermission (50+% required)
+    (#duel - start duel mode - just with custom module from goldmod-userscripts)
+    (#tournament - start tournament mode - just with custom module from goldmod-userscripts)
     
     ... and much more ... :D
 
@@ -31,11 +43,9 @@ Good luck and have fun ;)
 
 **Work in Process:**
 
-    better anticheat ( in work )
     enable-disable-commands-system ( currently not in work )
     MixModule ( currently not in work )
     Clantag Detection ( in work )
-    more commands ( currently not in work )
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -63,13 +73,13 @@ For Windows: *** Installation for Windows is quite easy ***
 
     E-Mail: buddymod.cube2@gmail.com
     IRC: Server: irc.gamesurge.com 6667 | Channel: #buds-servers, #novi, #sauercom and #impressivesquad ---> Names: BudSpencer
-    Ingame: Names: /BudSpencer, TanteBud, OnkelBud, MuttiBud, PapiBud, OmaBud, OpaBud and Cocoz
+    Ingame: Names: /BudSpencer, Archaeopteryx, Cocoz
 
 -------------------------------------------------------------------------------------------------------------
 
 **Bug Reports:**
 
-If you suspect any bugs and problems, likes and dislikes message me on IRC, E-Mail or talk with me ingame, I'm always listening. New Ideas for some features are desired ;), but no insulting about anything, I dont waste time with random noobs. 
+If you suspect any bugs and problems, likes and dislikes message me on IRC, E-Mail or talk with me ingame, I'm always listening. New Ideas for some features are desired ;), but no insulting about anything, I don't waste time with random noobs. 
 
 -------------------------------------------------------------------------------------------------------------
 

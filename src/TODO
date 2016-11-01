@@ -254,9 +254,9 @@ IRC: +
 	# Otherways default permission check is used:
 	# FOR SERVER COMMANDS
 	# if (isadmin(cn)) {
-	#	return 2;
-	# } else if (ismaster(cn)) {
 	#	return 3;
+	# } else if (ismaster(cn)) {
+	#	return 2;
 	# } else {
 	#	return 1;
 	#} 
