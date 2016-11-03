@@ -9,14 +9,15 @@ setlogfile "log/serverlog.gmsl"
 
 // Show local time and main server data
 serversoftwarename = "GoldMod Collect"
-servershortname = "@VENICE_STORM@"
+servershortname = "@GOLDMOD_SERVER@"
 serverdate = "2015-2016"
-serverversion = "GoldMod Gamma 6.0.3_07 Rev 2.3 (III)"
+serverversion = "GoldMod Deltha 6.6.3_015 Rev 5.5 (VI)"
+serverauthors = "/BudSpencer, .rC|Terence and others ..."
 
 echo "********************************************************************************"
 echo ( format "Started Sauerbraten Server ... Time: %1" ( systimef "%c" ) )
 echo "********************************************************************************"
-echo ( format "%1: Server Modification by /BudSpencer, .rC|Terence and others ..." $serversoftwarename )
+echo ( format "%1: by %2" $serversoftwarename $serverauthors )
 echo "********************************************************************************"
 echo ( format "(C) %1" $serverdate )
 echo "********************************************************************************"
@@ -31,12 +32,13 @@ echo "**************************************************************************
 // Core scripts, do not delete these lines until you know what are you doing
 
 exec "scripts/GeoIPContSystemCore.cfg" // geoip core
-exec "scripts/UserList.cfg" // user list database
+exec "scripts/MultiLanguageCore.cfg" // multilanguage function libary
 exec "scripts/DefaultLibary.cfg" // core for custom cubescript functions and much more
 exec "scripts/ServerMessages.cfg" // Includes all server messages, server can send to player/irc/log
 exec "scripts/PermissionConfig.cfg" // file to Initialize player permissions
 exec "scripts/DatabaseInitialization.cfg" // system to Initialize sqlite3 database engine
 exec "scripts/AntiCheatSystem.cfg" // anticheat system header( libary )
+exec "scripts/Totalstats.cfg" // totalstats libary ( required for totalstats system + #stats <cn> TOTAL )
 
 exec "VPN_ban/askidban.cfg" // askidban ban libary
 
@@ -55,8 +57,8 @@ db_init
 // db_init
 
 // You can register other databases for some scripts
-// db_register "sqlite3" "second.db" "seconddb_name"
-// db_init "seconddb_name" 0
+// db_register "sqlite3" "name.db" "dbname"
+// db_init "dbname" 0
 
 
 // -------------------------------------
@@ -76,7 +78,7 @@ serverowner = "Enter_Your_Name_Here"
 servercountry = "Enter_Location_Here"
 
 // Message of the day
-servermotd  "Hello and welcome to my server, running GoldMod v6.0.0 Beta"
+servermotd  ( format "Hello and welcome to my server, running %1" $serverversion )
 
 // Max number of connected clients
 maxclients 24
@@ -107,10 +109,10 @@ serverport 28785
 // serverpass ""
 
 // Password to become admin
-adminpass xy
+adminpass hjbdfhibsdfih<sdofi<sdoiufhouihoiuhbhi
 
 // Password for gain master
-masterpass yx
+masterpass 12342401232,mb32ko3kepwekrd
 
 // domain to use for local authkeys to the server so people can authenticate by "auth domain_here"
 // must be a non-empty string that should be unique to your server to prevent clashes with other servers
@@ -151,8 +153,14 @@ banfile "permbans.cfg"
 // rconport 27070
 // rconpass atata
 
-// GeoIp database
+/////////////////////////////////////////////
+///////// GEOIP /////////////////////////////
+// GeoIP Country database
 geodb "GeoIPCountry.dat"
+
+// GeoIP City database ---> idk correctly, if that database works
+geocitydb "GeoIPCity.dat"
+/////////////////////////////////////////////
 
 // record demos after every game
 autodemo 1
@@ -169,8 +177,8 @@ demoname = [ result (concatword (systimef "%Y_%m_%d_%H_%M") - (modetostr (getmod
 // folder for save and load maps (coopedit mode via #savemap)
 mapdir "maps"
 
-// intermission time (default: 15000 millisec)
-imissiontime 15000
+// intermission time (default: 20000 millisec)
+imissiontime 20000
 
 // time limit for every round (0 - don't change, in game #gtime)
 roundtime 0
@@ -215,23 +223,6 @@ nucleus elegy shiva arbana simplicity pitch_black duel7 suburb roughinery stempl
 sauerstruck phosgene neonpanic akaritori konkuri-to katrez_d oddworld guacamole wake5 frostbyte thor aqueducts ksauer1 kmap5 thetowers darkdeath wdcd
 ]
 
-tacmaps = [
-complex douze ot academy metl2 metl3 justice turbine hashi mbt2 fanatic_quake dock renegade curvy_castle nmp8 tartech aard3c
-skrdm1 bvdm_01 outpost park tumwalk industry injustice mbt10 curvedm kalking1 hog2 kffa fragplaza collusion duel8 alithia island
-frozen memento neondevastation alloy ruine DM_BS1 shinmei1 osiris sdm1 powerplant oasis metl4 ruby shindou dune gubo teahupoo
-rm5 depot masdm orbe torment legazzo fury mbt9 refuge shadowed dirtndust force killfactory moonlite castle_trap orion ogrosupply
-nucleus elegy shiva arbana simplicity pitch_black duel7 suburb roughinery stemple tejen pgdm deathtek hades corruption paradigm lostinspace
-sauerstruck phosgene neonpanic akaritori konkuri-to katrez_d oddworld guacamole wake5 frostbyte thor aqueducts ksauer1 kmap5 thetowers darkdeath wdcd
-urban_c nevil_c fb_capture collusion c_valley fc3 face-capture nmp4 hallo tempest monastery fc4 relic
-fc5 asteroids reissen akroseum turbulence c_egypt caribbean dust2 campo damnation arabic spcr
-evilness subterra snapper_rocks kopenhagen asgard mbt12 cwcastle nitro haste valhalla abbey venice mercury core_transfer hidden 
-forge eternal_valley tortuga core_refuge infamy capture_night river_c serenity xenon nmp9 ph-capture killcore3 twinforts duomo donya
-flagstone siberia shipwreck authentic bt_falls garden mbt1 autumn
-mach2 l_ctf berlin_wall europium redemption catch22
-forgotten bad_moon mill mbt4   
-desecration recovery sacrifice
-]
-
 // Maps for capture modes
 capturemaps = [
 urban_c nevil_c fb_capture collusion c_valley lostinspace fc3 face-capture nmp4 nmp8 hallo tempest monastery alithia hades fc4 relic
@@ -255,7 +246,6 @@ mpsp6a mpsp6b mpsp6c mpsp9a mpsp9b mpsp9c mpsp10 lost level9
 
 maprotationreset
 maprotation "*" $ffamaps
-// maprotation "?tac" $tacmaps
 maprotation "?capture ?hold" $capturemaps
 maprotation "?ctf ?protect ?collect" $ctfmaps
 
@@ -320,9 +310,17 @@ exec "scripts/modules/SyncauthModule.cfg"
 // The "default" db is used by default, one can omit spy_db definition
 // spy_db = "default" 
 
-// Execute module
-exec "scripts/modules/SpyModule.cfg"
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// NEW - TOTALSTATS /////////////////////////////////////////////////////////////
 
+// which database should we use to read/write stats to database (default == default / no value == no database use)
+scoreboard_db = "default"
+
+// execute control module 
+exec "scripts/modules/ScoreboardSystem.cfg"
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+exec "scripts/modules/SpyModule.cfg"
 
 // -------------------------------------
 // COMMANDS
@@ -348,19 +346,16 @@ execdir "scripts/languages"
 // Askidban - NEW
 execdir "VPN_ban/"
 
-// *** GOLDMOD MODULES CONFIGURATION *** \\ ( to disable module, just add // on first column of line )
-
-exec "scripts/modules/AllowVoteModule.cfg"
-exec "scripts/modules/LoadmapMessages.cfg"
+// *** GOLDMOD MODULES CONFIGURATION *** \\ ( to disable module, just comment (//) it )
 exec "scripts/modules/ProxyDetection.cfg"
 exec "scripts/modules/ServerAnnoucments.cfg"
 exec "scripts/modules/TeambalanceModule.cfg"
 exec "scripts/modules/ArrayCTRL.cfg"
 exec "scripts/modules/PlayerOwnage.cfg"
 exec "scripts/modules/MultikillMessages.cfg"
-exec "scripts/modules/UserSystem.cfg"
 exec "scripts/modules/MuteInsulters.cfg"
-exec "scripts/modules/AbusingProtection.cfg"
+exec "scripts/modules/MapVote.cfg" // mapfight module
+exec "scripts/modules/DuelMode.cfg" // duel module (#duel <cn1> <cn2> <mode> <map>)
 
 // ------------------------------------------------------------------------------ \\
 
@@ -383,10 +378,9 @@ kick_time_for_abusing = 6 // 6 hours ban for abusing
 
 // ------------------------------------------------------------------------------ \\
 
-// *** USER SYSTEM ( IP-Based ) *** \\
+// *** USER SYSTEM ( IP-Based and PASSWORD based ) *** \\
 
-enable_user_system_master = 1
-enable_user_system_admin = 1
+user_db = "default"
 
 // ------------------------------------------------------------------------------ \\
 
